@@ -144,6 +144,12 @@ main #projects .card-projects-grid {
     margin: 2vh 2vh;
   }
 }
+main #projects #card-grid-projects .card,
+main #projects .card-projects-grid .card {
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 main #projects #card-grid-projects .card .new-container .card-img,
 main #projects .card-projects-grid .card .new-container .card-img {
   max-width: 100%;
@@ -181,18 +187,96 @@ main #projects .card-projects-grid .card .card-link.active {
 }
 main .contact {
   display: flex;
+  height: 80dvh;
+  background-color: rgba(0, 0, 0, 0);
 }
 main .contact .contact-text {
   flex: 1;
 }
 main .contact .contact-text h3 {
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 4rem;
+  margin-top: 10dvh;
+  text-align: center;
 }
-main .contact .form-contact {
+main .contact .contact-text .contact-description {
+  margin-top: 5dvh;
+  color: rgb(217, 217, 217);
+  text-align: center;
+  margin-bottom: 15dvh;
+  font-size: 1.2rem;
+}
+main .contact .contact-text .ring {
+  position: relative;
+  right: 30dvh;
+}
+main .contact #contact-form {
   flex: 1;
 }
+main .contact #contact-form .name {
+  border-bottom: 1px solid white;
+  margin-right: 5dvh;
+  margin-bottom: 5dvh;
+}
+main .contact #contact-form .name label {
+  color: #fff;
+  font-size: 1rem;
+}
+main .contact #contact-form .name #name-input {
+  width: 60dvh;
+  border: none;
+  outline: none;
+  background-color: #151515;
+}
+main .contact #contact-form .email {
+  border-bottom: 1px solid white;
+  margin-right: 5dvh;
+  margin-bottom: 5dvh;
+}
+main .contact #contact-form .email label {
+  color: #fff;
+  font-size: 1rem;
+}
+main .contact #contact-form .email #email-input {
+  width: 60dvh;
+  border: none;
+  outline: none;
+  background-color: #151515;
+}
+main .contact #contact-form .msg {
+  border-bottom: 1px solid white;
+  margin-right: 5dvh;
+  margin-bottom: 5dvh;
+}
+main .contact #contact-form .msg label {
+  color: #fff;
+  position: relative;
+  top: -22dvh;
+  font-size: 1rem;
+}
+main .contact #contact-form .msg #msg-input {
+  width: 60dvh;
+  border: none;
+  outline: none;
+  background-color: #151515;
+}
+main .contact #contact-form .btn-message {
+  border: none;
+  background-color: #151515;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+main .contact #contact-form .btn-message:hover {
+  color: rgb(78, 225, 160);
+}
+main .contact #contact-form .btn-message.active {
+  border-bottom: 3px solid rgb(78, 225, 160);
+}
 
+footer {
+  background-color: rgba(0, 0, 0, 0);
+}
 footer .footer-container {
   color: #fff;
   display: flex;
@@ -204,7 +288,10 @@ footer .footer-container {
 footer .footer-title {
   margin-top: 5vh;
 }
-footer h2.active {
+footer p {
+  font-size: 2rem;
+}
+footer p.active {
   border-bottom: 3px solid rgb(78, 225, 160);
 }
 footer i {

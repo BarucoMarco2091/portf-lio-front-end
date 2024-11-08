@@ -165,6 +165,10 @@ main {
             }
 
             .card {
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+
                 .new-container {
                     .card-img {
                         max-width: 100%;
@@ -207,23 +211,114 @@ main {
 
     .contact {
         display: flex;
+        height: 80dvh;
+        background-color: $terciary;
 
         .contact-text {
             flex: 1;
 
             h3 {
                 color: $white;
-                font-size: 3.5rem;
+                font-size: 4rem;
+                margin-top: 10dvh;
+                text-align: center;
+            }
+
+            .contact-description {
+                margin-top: 5dvh;
+                color: $grey;
+                text-align: center;
+                margin-bottom: 15dvh;
+                font-size: 1.2rem;
+            }
+
+            .ring {
+                position: relative;
+                right: 30dvh;
             }
         }
 
-        .form-contact {
+        #contact-form {
             flex: 1;
+
+            .name {
+                border-bottom: 1px solid white;
+                margin-right: 5dvh;
+                margin-bottom: 5dvh;
+
+                label {
+                    color: $white;
+                    font-size: 1rem;
+                }
+
+                #name-input {
+                    width: 60dvh;
+                    border: none;
+                    outline: none;
+                    background-color: $primary;
+                }
+            }
+
+            .email {
+                border-bottom: 1px solid white;
+                margin-right: 5dvh;
+                margin-bottom: 5dvh;
+
+                label {
+                    color: $white;
+                    font-size: 1rem;
+                }
+
+                #email-input {
+                    width: 60dvh;
+                    border: none;
+                    outline: none;
+                    background-color: $primary;
+                }
+            }
+
+            .msg {
+                border-bottom: 1px solid white;
+                margin-right: 5dvh;
+                margin-bottom: 5dvh;
+
+                label {
+                    color: $white;
+                    position: relative;
+                    top: -22dvh;
+                    font-size: 1rem;
+                }
+
+                #msg-input {
+                    width: 60dvh;
+                    border: none;
+                    outline: none;
+                    background-color: $primary;
+                }
+            }
+
+            .btn-message {
+                border: none;
+                background-color: $primary;
+                color: $white;
+                font-size: 1.1rem;
+                cursor: pointer;
+            }
+
+            .btn-message:hover {
+                color: $green;
+            }
+
+            .btn-message.active {
+                border-bottom: 3px solid $green;
+            }
         }
     }
 }
 
 footer {
+    background-color: $terciary;
+
     .footer-container {
         color: $white;
         display: flex;
@@ -237,7 +332,11 @@ footer {
         margin-top: 5vh;
     }
 
-    h2.active {
+    p {
+        font-size: 2rem;
+    }
+
+    p.active {
         border-bottom: 3px solid $green;
     }
 
