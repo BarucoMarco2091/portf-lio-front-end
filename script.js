@@ -76,6 +76,20 @@ const projectsData = [
         site: "https://barucomarco2091.github.io/quiz-frontend-mentor/",
         code: "https://github.com/BarucoMarco2091/quiz-frontend-mentor",
     },
+    {
+        image: "assets/images/clipboard.jpg",
+        languages: ["HTML", "SCSS", "JavaScript"],
+        description: "CLIPBOARD LANDING PAGE MASTER",
+        site: "https://barucomarco2091.github.io/quiz-frontend-mentor/",
+        code: "https://barucomarco2091.github.io/clipboard-landing-page/",
+    },
+    {
+        image: "assets/images/insure.jpg",
+        languages: ["HTML", "SCSS", "JavaScript"],
+        description: "INSURE LANDING PAGE MASTER",
+        site: "https://barucomarco2091.github.io/insure-landing-page-master/",
+        code: "https://github.com/BarucoMarco2091/insure-landing-page-master",
+    },
 ];
 
 const experienceData = [
