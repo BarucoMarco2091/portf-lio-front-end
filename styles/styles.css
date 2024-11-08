@@ -17,7 +17,10 @@ header .header-container {
   justify-content: space-around;
   margin-top: 5vh;
 }
-header .header-container h2.active {
+header .header-container p {
+  font-size: 2rem;
+}
+header .header-container p.active {
   border-bottom: 3px solid rgb(78, 225, 160);
 }
 header .header-container i {
@@ -175,6 +178,19 @@ main #projects .card-projects-grid .card .card-link:hover {
 main #projects #card-grid-projects .card .card-link.active,
 main #projects .card-projects-grid .card .card-link.active {
   border-bottom: 3px solid rgb(78, 225, 160);
+}
+main .contact {
+  display: flex;
+}
+main .contact .contact-text {
+  flex: 1;
+}
+main .contact .contact-text h3 {
+  color: #fff;
+  font-size: 3.5rem;
+}
+main .contact .form-contact {
+  flex: 1;
 }
 
 footer .footer-container {

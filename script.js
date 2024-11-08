@@ -60,7 +60,7 @@ const projectsData = [
         languages: ["HTML", "SCSS", "JavaScript"],
         description: "AGE CALCULATOR APP",
         site: "https://barucomarco2091.github.io/agecalculatorapp/",
-        code:"https://github.com/BarucoMarco2091/agecalculatorapp",
+        code: "https://github.com/BarucoMarco2091/agecalculatorapp",
     },
     {
         image: "assets/images/fylolandingpage.jpg",
@@ -144,4 +144,43 @@ function loadProjects() {
 document.addEventListener('DOMContentLoaded', function () {
     loadProjects();
     load();
-}); 
+
+    const form = document.getElementById("contact-form");
+    if (form) {
+        form.addEventListener("submit", sendEmail); // Chama a função sendEmail quando o formulário é submetido
+    } else {
+        console.error("O formulário de contato não foi encontrado.");
+    }
+});
+
+// Inicialize o EmailJS com sua Public Key
+emailjs.init("u0swfbHqnqJ-1zjvW"); // Substitua pela sua Public Key
+
+function sendEmail(event) {
+    event.preventDefault(); // Impede o envio normal do formulário
+    console.log("Função sendEmail foi chamada."); // Confirma que a função está sendo chamada
+
+
+    // Capture os valores dos campos do formulário
+    const name = document.getElementById("name-input").value;
+    const email = document.getElementById("email-input").value;
+    const message = document.getElementById("msg-input").value;
+
+    console.log("Valores capturados:", { name, email, message });
+    const templateParams = {
+        from_name: name,
+        reply_to: email,
+        message: message,
+    };
+
+    emailjs.send("service_xtdk7ra", "template_8p9gdmj", templateParams)
+        .then((response) => {
+            console.log("E-mail enviado com sucesso!", response.status, response.text);
+            alert("Mensagem enviada com sucesso!");
+        })
+        .catch((error) => {
+            console.error("Erro ao enviar o e-mail:", error);
+            alert("Ocorreu um erro ao enviar a mensagem. Verifique o console.");
+        });
+}
+

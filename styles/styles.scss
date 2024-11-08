@@ -26,7 +26,11 @@ header {
         justify-content: space-around;
         margin-top: 5vh;
 
-        h2.active {
+        p {
+            font-size: 2rem;
+        }
+
+        p.active {
             border-bottom: 3px solid $green;
         }
 
@@ -198,6 +202,23 @@ main {
                     border-bottom: 3px solid $green;
                 }
             }
+        }
+    }
+
+    .contact {
+        display: flex;
+
+        .contact-text {
+            flex: 1;
+
+            h3 {
+                color: $white;
+                font-size: 3.5rem;
+            }
+        }
+
+        .form-contact {
+            flex: 1;
         }
     }
 }

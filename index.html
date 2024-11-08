@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="header-container">
-            <h2 class="active">marcobaruco</h2>
+            <p class="active">marcobaruco</p>
             <a href="tel:+5511996221043"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.linkedin.com/in/marco-tamaki-3bb3512a3/"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/BarucoMarco2091"><i class="fa-brands fa-github"></i></a>
@@ -37,6 +37,30 @@
             <h2 class="projects-title">Projects</h2>
             <div id="card-grid-projects"></div>
         </div>
+        <div class="contact">
+            <div class="contact-text">
+                <h3>Contact</h3>
+                <p class="contact-description">I would love to hear about your project and how I<br> could help. Please
+                    fill in the form, and I'll get back to you as soon as possible</p>
+                <img class="ring" src="assets/images/pattern-rings (1).png" alt="rings">
+            </div>
+            <form class="form-contact" id="contact-form">
+                <div class="name">
+                    <label for="name-input">Name</label>
+                    <input type="text" name="name-input" id="name-input" required>
+                </div>
+                <div class="email">
+                    <label for="email-input">Email</label>
+                    <input type="email" name="email-input" id="email-input" required>
+                </div>
+                <div class="msg">
+                    <label for="msg-input">Message</label>
+                    <textarea name="msg-input" id="msg-input" cols="30" rows="10" required></textarea>
+                </div>
+                <button class="btn-message" type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+        
     </main>
     <footer>
         <div class="footer-container">
@@ -46,6 +70,8 @@
             <a href="https://github.com/BarucoMarco2091"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>
