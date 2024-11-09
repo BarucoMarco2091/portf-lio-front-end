@@ -142,7 +142,7 @@ function loadProjects() {
         card.innerHTML =
             `
         <div class="new-container">
-        <img class="card-img" src="${project.image}" alt="${project.description}">
+        <img class="card-img" src="${project.image}" alt="${project.description}" loading="lazy">
         </div>
         <h2 class="project-title">${project.description}</h2>
         <h2 class="card-description">${project.languages.join(',')}</h2>

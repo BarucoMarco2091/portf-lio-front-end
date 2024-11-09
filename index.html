@@ -8,6 +8,8 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/footer.css">
     <title>Portfólio de Marco Baruco - Desenvolvedor Front-End</title>
 </head>
 <body>
@@ -43,7 +45,7 @@
                 <p class="contact-description">I would love to hear about your project and how I<br> could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
                 <img class="ring" src="assets/images/pattern-rings (1).png" alt="rings">
             </div>
-            <form class="form-contact" id="contact-form">
+            <form id="contact-form">
                 <div class="name">
                     <label for="name-input">Name</label>
                     <input type="text" name="name-input" id="name-input" required>
@@ -53,7 +55,7 @@
                     <input type="email" name="email-input" id="email-input" required>
                 </div>
                 <div class="msg">
-                    <label for="msg-input">Message</label>
+                    <label class="msg-input" for="msg-input">Message</label>
                     <textarea name="msg-input" id="msg-input" cols="90" rows="10" required></textarea>
                 </div>
                 <button class="btn-message active" type="submit">SEND MESSAGE</button>
