@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 main #experience-container,
 main .new-card-grid {
@@ -160,11 +161,48 @@ main .contact #contact-form .btn-message {
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
+  display: block;
+  /* Garante que o botão ocupe uma linha completa */
+  width: 90%;
+  /* Define uma largura apropriada */
+  max-width: 320px;
+  /* Limite a largura em telas pequenas */
+  margin: 10px auto;
+  /* Centraliza o botão e adiciona margem */
+  padding: 10px 20px;
+  /* Ajuste para garantir que o texto esteja visível */
 }
-main .contact #contact-form .btn-message:hover {
+main .contact .btn-message:hover {
   color: rgb(78, 225, 160);
 }
 
+@media screen and (max-width: 320px) {
+  footer {
+    position: relative !important;
+    top: 20dvh !important;
+  }
+}
+@media screen and (max-width: 360px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .btn-message {
+    margin-bottom: 1dvh;
+    /* adiciona um espaçamento */
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  footer {
+    margin-top: 10dvh !important;
+  }
+}
 @media screen and (max-width: 480px) {
   .image-container {
     display: none !important;
@@ -187,7 +225,8 @@ main .contact #contact-form .btn-message:hover {
   }
 }
 @media screen and (max-width: 480px) {
-  #projects #card-grid-projects, #projects .card-projects-grid {
+  #projects #card-grid-projects,
+  #projects .card-projects-grid {
     display: grid !important;
     grid-template-columns: repeat(1, 1fr) !important;
     width: 100% !important;
@@ -196,6 +235,8 @@ main .contact #contact-form .btn-message:hover {
 @media screen and (max-width: 480px) {
   .card {
     margin: 2dvh !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
 @media screen and (max-width: 480px) {
@@ -250,17 +291,21 @@ main .contact #contact-form .btn-message:hover {
   #contact-form {
     display: flex !important;
     flex-direction: column !important;
-    height: 5dvh !important;
+    height: 3dvh !important;
   }
 }
 @media screen and (max-width: 480px) {
   #msg-input {
-    height: 5dvh !important;
+    height: 3dvh !important;
   }
 }
 @media screen and (max-width: 480px) {
   .btn-message {
-    padding-bottom: 3dvh !important;
+    width: 90%; /* Define uma largura apropriada para tela pequena */
+    max-width: 320px; /* Limita a largura máxima */
+    margin: 1dvh auto !important; /* Centraliza o botão */
+    padding: 1dvh 1dvh !important; /* Ajuste de padding para garantir legibilidade */
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 1200px) {

@@ -1,173 +1,203 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
-#experience-container,
-.new-card-grid {
+main #experience-container,
+main .new-card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin: 5dvh 5dvh;
 }
 @media screen and (max-width: 1200px) {
-  #experience-container,
-  .new-card-grid {
+  main #experience-container,
+  main .new-card-grid {
     grid-template-columns: repeat(2, 1fr);
     margin-left: 2dvh;
     margin-right: 2dvh;
     padding-bottom: 5dvh;
   }
 }
-#experience-container .new-card-title,
-.new-card-grid .new-card-title {
+main #experience-container .new-card-title,
+main .new-card-grid .new-card-title {
   color: #fff;
   font-size: 3rem;
   margin-bottom: 4dvh;
 }
-#experience-container .new-card-paragraph,
-.new-card-grid .new-card-paragraph {
+main #experience-container .new-card-paragraph,
+main .new-card-grid .new-card-paragraph {
   color: rgb(217, 217, 217);
   font-size: 1.25rem;
 }
-
-#projects .projects-title {
+main #projects .projects-title {
   color: #fff;
   font-size: 3.5rem;
   margin: 5dvh 5dvh;
 }
-#projects #card-grid-projects,
-#projects .card-projects-grid {
+main #projects #card-grid-projects,
+main #projects .card-projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 3dvh 2dvh;
   gap: 5px;
 }
-#projects #card-grid-projects .card,
-#projects .card-projects-grid .card {
+main #projects #card-grid-projects .card,
+main #projects .card-projects-grid .card {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
-#projects #card-grid-projects .card .new-container .card-img,
-#projects .card-projects-grid .card .new-container .card-img {
+main #projects #card-grid-projects .card .new-container .card-img,
+main #projects .card-projects-grid .card .new-container .card-img {
   max-width: 100%;
   height: auto;
 }
-#projects #card-grid-projects .card .project-title,
-#projects .card-projects-grid .card .project-title {
+main #projects #card-grid-projects .card .project-title,
+main #projects .card-projects-grid .card .project-title {
   color: #fff;
   font-size: 1.7rem;
   margin-top: 3vh;
   margin-bottom: 3vh;
 }
-#projects #card-grid-projects .card .card-description,
-#projects .card-projects-grid .card .card-description {
+main #projects #card-grid-projects .card .card-description,
+main #projects .card-projects-grid .card .card-description {
   color: rgb(217, 217, 217);
   font-size: 1.3rem;
   margin-bottom: 3vh;
 }
-#projects #card-grid-projects .card a,
-#projects .card-projects-grid .card a {
+main #projects #card-grid-projects .card a,
+main #projects .card-projects-grid .card a {
   margin-left: 1rem;
 }
-#projects #card-grid-projects .card .card-link,
-#projects .card-projects-grid .card .card-link {
+main #projects #card-grid-projects .card .card-link,
+main #projects .card-projects-grid .card .card-link {
   text-decoration: none;
   color: #fff;
 }
-#projects #card-grid-projects .card .card-link:hover,
-#projects .card-projects-grid .card .card-link:hover {
+main #projects #card-grid-projects .card .card-link:hover,
+main #projects .card-projects-grid .card .card-link:hover {
   color: rgb(78, 225, 160);
 }
-#projects #card-grid-projects .card .card-link.active,
-#projects .card-projects-grid .card .card-link.active {
+main #projects #card-grid-projects .card .card-link.active,
+main #projects .card-projects-grid .card .card-link.active {
   border-bottom: 3px solid rgb(78, 225, 160);
 }
-
-.contact {
+main .contact {
   display: flex;
   height: 80dvh;
   background-color: rgba(0, 0, 0, 0);
 }
-.contact .contact-text {
+main .contact .contact-text {
   flex: 1;
 }
-.contact .contact-text h3 {
+main .contact .contact-text h3 {
   color: #fff;
   font-size: 4rem;
   margin-top: 10dvh;
   text-align: center;
 }
-.contact .contact-text .contact-description {
+main .contact .contact-text .contact-description {
   margin-top: 5dvh;
   color: rgb(217, 217, 217);
   text-align: center;
   margin-bottom: 15dvh;
   font-size: 1.2rem;
 }
-.contact .contact-text .ring {
+main .contact .contact-text .ring {
   position: relative;
   right: 30dvh;
 }
-.contact #contact-form {
+main .contact #contact-form {
   flex: 1;
 }
-.contact #contact-form .name {
+main .contact #contact-form .name {
   border-bottom: 1px solid white;
   margin-right: 5dvh;
   margin-bottom: 5dvh;
 }
-.contact #contact-form .name label {
+main .contact #contact-form .name label {
   color: #fff;
   font-size: 1rem;
 }
-.contact #contact-form .name #name-input {
+main .contact #contact-form .name #name-input {
   width: 60dvh;
   border: none;
   outline: none;
   background-color: #151515;
 }
-.contact #contact-form .email {
+main .contact #contact-form .email {
   border-bottom: 1px solid white;
   margin-right: 5dvh;
   margin-bottom: 5dvh;
 }
-.contact #contact-form .email label {
+main .contact #contact-form .email label {
   color: #fff;
   font-size: 1rem;
 }
-.contact #contact-form .email #email-input {
+main .contact #contact-form .email #email-input {
   width: 60dvh;
   box-shadow: 0 0 0;
   border: none;
   outline: none;
   background-color: #151515;
 }
-.contact #contact-form .msg {
+main .contact #contact-form .msg {
   border-bottom: 1px solid white;
   margin-right: 5dvh;
   margin-bottom: 5dvh;
 }
-.contact #contact-form .msg label {
+main .contact #contact-form .msg label {
   color: #fff;
   font-size: 1rem;
 }
-.contact #contact-form .msg #msg-input {
+main .contact #contact-form .msg #msg-input {
   width: 60dvh;
   border: none;
   outline: none;
   box-shadow: 0 0 0;
   background-color: #151515;
 }
-.contact #contact-form .btn-message {
+main .contact #contact-form .btn-message {
   border: none;
   background-color: #151515;
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
+  display: block;
+  /* Garante que o botão ocupe uma linha completa */
+  width: 90%;
+  /* Define uma largura apropriada */
+  max-width: 320px;
+  /* Limite a largura em telas pequenas */
+  margin: 10px auto;
+  /* Centraliza o botão e adiciona margem */
+  padding: 10px 20px;
+  /* Ajuste para garantir que o texto esteja visível */
 }
-.contact #contact-form .btn-message:hover {
+main .contact .btn-message:hover {
   color: rgb(78, 225, 160);
 }
 
+@media screen and (max-width: 360px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .btn-message {
+    margin-bottom: 1dvh;
+    /* adiciona um espaçamento */
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  footer {
+    margin-top: 2dvh !important;
+  }
+}
 @media screen and (max-width: 480px) {
   .image-container {
     display: none !important;
@@ -190,15 +220,18 @@
   }
 }
 @media screen and (max-width: 480px) {
-  #card-grid-projects,
-  .card-projects-grid {
+  #projects #card-grid-projects,
+  #projects .card-projects-grid {
+    display: grid !important;
     grid-template-columns: repeat(1, 1fr) !important;
-    margin: 2dvh 2dvh !important;
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 480px) {
   .card {
     margin: 2dvh !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
 @media screen and (max-width: 480px) {
@@ -253,17 +286,21 @@
   #contact-form {
     display: flex !important;
     flex-direction: column !important;
-    height: 5dvh !important;
+    height: 3dvh !important;
   }
 }
 @media screen and (max-width: 480px) {
   #msg-input {
-    height: 5dvh !important;
+    height: 3dvh !important;
   }
 }
 @media screen and (max-width: 480px) {
   .btn-message {
-    padding-bottom: 3dvh !important;
+    width: 90%; /* Define uma largura apropriada para tela pequena */
+    max-width: 320px; /* Limita a largura máxima */
+    margin: 1dvh auto !important; /* Centraliza o botão */
+    padding: 1dvh 1dvh !important; /* Ajuste de padding para garantir legibilidade */
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 1200px) {
