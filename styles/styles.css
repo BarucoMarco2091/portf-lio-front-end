@@ -177,6 +177,12 @@ main .contact .btn-message:hover {
   color: rgb(78, 225, 160);
 }
 
+@media screen and (max-width: 320px) {
+  footer {
+    position: relative !important;
+    top: 20dvh !important;
+  }
+}
 @media screen and (max-width: 360px) {
   .contact-form {
     display: flex;
@@ -195,7 +201,7 @@ main .contact .btn-message:hover {
 }
 @media screen and (max-width: 360px) {
   footer {
-    margin-top: 2dvh !important;
+    margin-top: 10dvh !important;
   }
 }
 @media screen and (max-width: 480px) {

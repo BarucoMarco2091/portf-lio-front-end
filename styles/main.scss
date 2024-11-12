@@ -210,7 +210,6 @@ main {
 
 @media screen and (max-width: 320px) {
     footer {
-        
         position: relative !important;
         top: 20dvh !important;
     }
@@ -237,6 +236,20 @@ main {
 @media screen and (max-width: 360px) {
     footer {
         margin-top: 10dvh !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    footer {
+        position: relative !important;
+        top: 10dvh !important;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    footer {
+        position: relative !important;
+        top: 5dvh !important;
     }
 }
 
