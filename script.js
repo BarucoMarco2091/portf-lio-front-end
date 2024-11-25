@@ -7,13 +7,6 @@ const projectsData = [
         code: "https://github.com/BarucoMarco2091/blogr-landing-page"
     },
     {
-        image: "assets/images/mortgagecalculator.jpg",
-        languages: ["HTML", "CSS", "JavaScript"],
-        description: "MORTGAGE REPAYMENT CALCULATOR",
-        site: "https://barucomarco2091.github.io/Mortgage-calculator/",
-        code: "https://github.com/BarucoMarco2091/Mortgage-calculator"
-    },
-    {
         image: "assets/images/comingsoonpage.jpg",
         languages: ["HTML", "CSS", "JavaScript"],
         description: "BASE APPAREL COMING SOON PAGE",
@@ -42,25 +35,11 @@ const projectsData = [
         code: "https://github.com/BarucoMarco2091/recipe-page"
     },
     {
-        image: "assets/images/tipcalculator.jpg",
-        languages: ["HTML", "CSS", "JavaScript"],
-        description: "TIP CALCULATOR APP",
-        site: "https://barucomarco2091.github.io/tip-calculator/",
-        code: "https://github.com/BarucoMarco2091/tip-calculator"
-    },
-    {
         image: "assets/images/interativeratingcomponent.jpg",
         languages: ["HTML", "CSS", "JavaScript"],
         description: "INTERATIVE RATING COMPONENT",
         site: "https://barucomarco2091.github.io/interactive-rating-component/",
         code: "https://github.com/BarucoMarco2091/interactive-rating-component",
-    },
-    {
-        image: "assets/images/agecalculatorapp.jpg",
-        languages: ["HTML", "SCSS", "JavaScript"],
-        description: "AGE CALCULATOR APP",
-        site: "https://barucomarco2091.github.io/agecalculatorapp/",
-        code: "https://github.com/BarucoMarco2091/agecalculatorapp",
     },
     {
         image: "assets/images/fylolandingpage.jpg",

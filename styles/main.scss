@@ -208,209 +208,159 @@ main {
     }
 }
 
-@media screen and (max-width: 320px) {
-    footer {
-        position: relative !important;
-        top: 20dvh !important;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .image-container {
+        display: none;
     }
 }
 
-@media screen and (max-width: 360px) {
-    .contact-form {
-        display: flex;
-        flex-direction: column;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    #experience-container,
+    .new-card-grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2dvh 2dvh;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
         align-items: center;
     }
 }
 
-@media screen and (max-width: 360px) {
-    .btn-message {
-        margin-bottom: 1dvh;
-        /* adiciona um espaçamento */
-        display: block;
-        width: 90%;
-        margin: 10px auto;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    footer {
-        margin-top: 10dvh !important;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    footer {
-        position: relative !important;
-        top: 10dvh !important;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    footer {
-        position: relative !important;
-        top: 5dvh !important;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .image-container {
-        display: none !important;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    #experience-container,
-    .new-card-grid {
-        grid-template-columns: repeat(1, 1fr) !important;
-        margin: 2dvh 2dvh !important;
-        width: 100% !important;
-        text-align: center !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .projects-title {
-        margin-top: 2dvh !important;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    #projects #card-grid-projects,
-    #projects .card-projects-grid {
-        display: grid !important;
-        grid-template-columns: repeat(1, 1fr) !important;
+        margin-top: 2dvh;
         width: 100% !important;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .card {
-        margin: 2dvh !important;
-        align-items: center !important;
-        justify-content: center !important;
+        margin: 2dvh;
+        align-items: center;
+        justify-content: center;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .project-title {
-        text-align: center !important;
+        text-align: center;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .card-description {
-        text-align: center !important;
+        text-align: center;
 
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .card-link {
-        justify-content: center !important;
-        text-align: center !important;
-        margin-bottom: 2dvh !important;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2dvh;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .contact {
-        display: flex !important;
-        flex-direction: column !important;
-        height: 70dvh !important;
-        margin-top: 2dvh !important;
+        display: flex;
+        flex-direction: column;
+        height: 70dvh;
+        margin-top: 2dvh;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .contact-text {
-        display: flex !important;
-        flex-direction: column !important;
-        margin-top: 2dvh !important;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2dvh;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     h3 {
-        margin-top: 1dvh !important;
-        font-size: 3rem !important;
+        margin-top: 1dvh;
+        font-size: 3rem;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .ring {
-        display: none !important;
+        display: none;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .contact-description {
-        margin-bottom: 3dvh !important;
+        margin-bottom: 3dvh;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     #contact-form {
-        display: flex !important;
-        flex-direction: column !important;
-        height: 3dvh !important;
+        display: flex;
+        flex-direction: column;
+        height: 3dvh;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     #msg-input {
-        height: 3dvh !important;
+        height: 3dvh;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
     .btn-message {
-        width: 90%;              /* Define uma largura apropriada para tela pequena */
-        max-width: 320px;        /* Limita a largura máxima */
-        margin: 1dvh auto !important;       /* Centraliza o botão */
-        padding: 1dvh 1dvh !important;      /* Ajuste de padding para garantir legibilidade */
+        width: 90%;
+        /* Define uma largura apropriada para tela pequena */
+        max-width: 320px;
+        /* Limita a largura máxima */
+        margin: 1dvh auto;
+        /* Centraliza o botão */
+        padding: 1dvh 1dvh;
+        /* Ajuste de padding para garantir legibilidade */
         font-size: 1rem;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
     #card-grid-projects,
     .card-projects-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
-        margin: 2dvh 2dvh !important;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2dvh 2dvh;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .contact {
-        display: flex !important;
-        flex-direction: column !important;
-        margin-left: 2dvh !important;
-        height: 60dvh !important;
-        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2dvh;
+        height: 60dvh;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     h3 {
-        margin-top: 5dvh !important;
+        margin-top: 5dvh;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .ring {
-        display: none !important;
+        display: none;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .contact-description {
-        margin-bottom: 3dvh !important;
-        margin-right: 2dvh !important;
+        margin-bottom: 3dvh;
+        margin-right: 2dvh;
     }
 }
