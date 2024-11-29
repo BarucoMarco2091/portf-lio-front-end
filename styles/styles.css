@@ -10,7 +10,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin: 5dvh 5dvh;
-  max-width: 1440px;
+  max-width: 1240px;
   margin: 0 auto;
   text-align: center;
 }
@@ -37,7 +37,7 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 3dvh 2dvh;
   gap: 5px;
-  max-width: 1440px;
+  max-width: 1240px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -386,7 +386,7 @@ footer a:hover i {
 }
 .btn-whatsapp {
   position: fixed;
-  bottom: 5dvh;
+  bottom: 15dvh;
   right: 10dvh;
   z-index: 5;
 }
@@ -398,6 +398,26 @@ footer a:hover i {
 
 .btn-whatsapp img:hover {
   transform: scale(1.2);
+}
+
+.btn-whatsapp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144px;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #232224;
+  color: #FFF;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 * {
