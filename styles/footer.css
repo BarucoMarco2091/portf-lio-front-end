@@ -1,1 +1,62 @@
-/*# sourceMappingURL=footer.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@keyframes scaleUp {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+footer {
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 2dvh;
+  padding-bottom: 2dvh;
+}
+footer .footer-container {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5vh 5vh;
+  border-top: 0.4px solid #fff;
+}
+footer .footer-title {
+  margin-top: 5vh;
+}
+footer p {
+  font-size: 2rem;
+}
+footer p.active {
+  border-bottom: 3px solid rgb(78, 225, 160);
+}
+footer a {
+  color: #e5e7eb;
+  margin-top: 5vh;
+  font-size: 1.5rem;
+}
+footer a:hover i {
+  color: rgb(78, 225, 160);
+  animation: scaleUp 0.8s ease-in infinite;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7dvh;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .footer-container {
+    display: flex;
+    margin-top: 2dvh;
+    border-top: none;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  i {
+    margin-top: 5dvh;
+    align-items: center;
+    text-align: center;
+  }
+}/*# sourceMappingURL=footer.css.map */

@@ -1,5 +1,19 @@
+@import '../styles/variables.scss';
+
+@keyframes scaleUp {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
 footer {
     background-color: $terciary;
+    margin-bottom: 2dvh;
+    padding-bottom: 2dvh;
 
     .footer-container {
         color: $white;
@@ -22,14 +36,15 @@ footer {
         border-bottom: 3px solid $green;
     }
 
-    i {
+    a {
         color: $secondary;
         margin-top: 5vh;
         font-size: 1.5rem;
     }
 
-    i:hover {
+    a:hover i {
         color: $green;
+        animation: scaleUp 0.8s ease-in infinite;
     }
 }
 

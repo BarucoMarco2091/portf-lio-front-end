@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Marco Baruco, desenvolvedor front-end especializado em HTML, CSS, JavaScript e responsividade. Conheça meus projetos e entre em contato." />">
+    <meta name="description"
+        content="Portfólio de Marco Baruco, desenvolvedor front-end especializado em HTML, CSS, JavaScript e responsividade. Conheça meus projetos e entre em contato." />
+    ">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/btn-whats.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Portfólio de Marco Baruco - Desenvolvedor Front-End</title>
 </head>
+
 <body>
     <header>
-        <div class="header-container">
+        <div class="header-container" data-aos="fade-right">
             <p class="active">marcobaruco</p>
-            <a href="tel:+5511996221043"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/marco-tamaki-3bb3512a3/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/BarucoMarco2091"><i class="fa-brands fa-github"></i></a>
+            <div class="header-icons" data-aos="fade-left">
+                <a href="tel:+5511996221043"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/marco-tamaki-3bb3512a3/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/BarucoMarco2091"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
         <div class="container">
             <div class="container-text">
@@ -34,34 +45,14 @@
         </div>
     </header>
     <main>
-        <div id="experience-container"></div>
-        <div id="projects">
+        <div id="experience-container" data-aos="flip-right"></div>
+        <div id="projects"  data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
             <h2 class="projects-title">Projects</h2>
             <div id="card-grid-projects"></div>
         </div>
-        <div class="contact">
-            <div class="contact-text">
-                <h3>Contact</h3>
-                <p class="contact-description">I would love to hear about your project and how I<br> could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
-                <img class="ring" src="assets/images/pattern-rings (1).png" alt="rings">
-            </div>
-            <form id="contact-form">
-                <div class="name">
-                    <label for="name-input">Name</label>
-                    <input type="text" name="name-input" id="name-input" required>
-                </div>
-                <div class="email">
-                    <label for="email-input">Email</label>
-                    <input type="email" name="email-input" id="email-input" required>
-                </div>
-                <div class="msg">
-                    <label class="msg-input" for="msg-input">Message</label>
-                    <textarea name="msg-input" id="msg-input" cols="90" rows="10" required></textarea>
-                </div>
-                <button class="btn-message active" type="submit">SEND MESSAGE</button>
-            </form>
-        </div>
-        
+
     </main>
     <footer>
         <div class="footer-container">
@@ -73,6 +64,10 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
-    
+    <a href="https://api.whatsapp.com/send?phone=5511996221043&text=Quero%20fazer%20um%20agendamento%20hoje!"
+    class="btn-whatsapp"
+    target="_blank"><img src="assets/images/whatssapp.svg" alt=""><span class="tooltip-text">Contact me</span>
+    </span></a>
 </body>
+
 </html>

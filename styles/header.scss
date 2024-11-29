@@ -1,0 +1,130 @@
+@import '../styles/variables.scss';
+
+@keyframes scaleUp {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+.header-container {
+    color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5dvh;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    p {
+        font-size: 2rem;
+    }
+
+    p.active {
+        border-bottom: 3px solid $green;
+    }
+
+    .header-icons {
+        display: flex;
+        justify-content: space-between;
+        gap: 3dvh;
+
+        a {
+            color: $secondary;
+            font-size: 1.5rem;
+        }
+
+        a:hover i {
+            color: $green;
+            animation: scaleUp 0.8s ease-in infinite;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5dvh;
+    margin-left: 5dvh;
+    margin-right: 5dvh;
+    padding-bottom: 15dvh;
+    border-bottom: 0.4px solid $white;
+
+    .container-text {
+        flex: 1;
+
+        .title {
+            color: $white;
+            font-size: 3.5rem;
+            margin-bottom: 5dvh;
+        }
+
+        .container-paragraph {
+            color: $grey;
+            font-size: 1.3rem;
+            margin-bottom: 5dvh;
+        }
+
+        a {
+            background-color: $primary;
+            color: $white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        a.active {
+            border-bottom: 3px solid $green;
+        }
+
+        a:hover {
+            color: $green;
+        }
+
+        i {
+            display: none;
+        }
+    }
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 5dvh;
+    margin-top: 5dvh;
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .header-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2dvh;
+        margin: 2dvh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        text-align: center;
+        max-width: 100%;
+    }
+}

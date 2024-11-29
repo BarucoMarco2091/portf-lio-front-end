@@ -28,20 +28,6 @@ const projectsData = [
         code: "https://github.com/BarucoMarco2091/sunnysidenew"
     },
     {
-        image: "assets/images/recipepage.jpg",
-        languages: ["HTML", "CSS"],
-        description: "RECIPE PAGE",
-        site: "https://barucomarco2091.github.io/recipe-page/",
-        code: "https://github.com/BarucoMarco2091/recipe-page"
-    },
-    {
-        image: "assets/images/interativeratingcomponent.jpg",
-        languages: ["HTML", "CSS", "JavaScript"],
-        description: "INTERATIVE RATING COMPONENT",
-        site: "https://barucomarco2091.github.io/interactive-rating-component/",
-        code: "https://github.com/BarucoMarco2091/interactive-rating-component",
-    },
-    {
         image: "assets/images/fylolandingpage.jpg",
         languages: ["HTML", "SCSS", "JavaScript"],
         description: "FYLO LANDING PAGE",
@@ -49,18 +35,11 @@ const projectsData = [
         code: "https://github.com/BarucoMarco2091/fylo-landing-page",
     },
     {
-        image: "assets/images/frontebdquiz.webp",
-        languages: ["HTML", "SCSS", "JavaScript"],
-        description: "FRONTEND QUIZ APP",
-        site: "https://barucomarco2091.github.io/quiz-frontend-mentor/",
-        code: "https://github.com/BarucoMarco2091/quiz-frontend-mentor",
-    },
-    {
         image: "assets/images/clipboard.jpg",
         languages: ["HTML", "SCSS", "JavaScript"],
         description: "CLIPBOARD LANDING PAGE MASTER",
-        site: "https://barucomarco2091.github.io/quiz-frontend-mentor/",
-        code: "https://barucomarco2091.github.io/clipboard-landing-page/",
+        site: "https://barucomarco2091.github.io/clipboard-landing-page/",
+        code: "https://github.com/BarucoMarco2091/clipboard-landing-page",
     },
     {
         image: "assets/images/insure.jpg",
@@ -138,42 +117,8 @@ document.addEventListener('DOMContentLoaded', function () {
     loadProjects();
     load();
 
-    const form = document.getElementById("contact-form");
-    if (form) {
-        form.addEventListener("submit", sendEmail); // Chama a função sendEmail quando o formulário é submetido
-    } else {
-        console.error("O formulário de contato não foi encontrado.");
-    }
 });
 
-// Inicialize o EmailJS com sua Public Key
-emailjs.init("u0swfbHqnqJ-1zjvW"); // Substitua pela sua Public Key
+AOS.init();
 
-function sendEmail(event) {
-    event.preventDefault(); // Impede o envio normal do formulário
-    console.log("Função sendEmail foi chamada."); // Confirma que a função está sendo chamada
-
-
-    // Capture os valores dos campos do formulário
-    const name = document.getElementById("name-input").value;
-    const email = document.getElementById("email-input").value;
-    const message = document.getElementById("msg-input").value;
-
-    console.log("Valores capturados:", { name, email, message });
-    const templateParams = {
-        from_name: name,
-        reply_to: email,
-        message: message,
-    };
-
-    emailjs.send("service_xtdk7ra", "template_8p9gdmj", templateParams)
-        .then((response) => {
-            console.log("E-mail enviado com sucesso!", response.status, response.text);
-            alert("Mensagem enviada com sucesso!");
-        })
-        .catch((error) => {
-            console.error("Erro ao enviar o e-mail:", error);
-            alert("Ocorreu um erro ao enviar a mensagem. Verifique o console.");
-        });
-}
 

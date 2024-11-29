@@ -1,105 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-
-$primary: #151515;
-$secondary: #e5e7eb;
-$white: #fff;
-$terciary: #0000;
-$grey: rgb(217, 217, 217);
-$green: rgb(78, 225, 160);
-
 @import '../styles/main.scss';
 @import '../styles/footer.scss';
+@import '../styles/variables.scss';
+@import '../styles/header.scss';
+@import '../styles/btn-whats.scss';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0;
+}
+
+header {
+    width: 100%;
 }
 
 body {
     background-color: $primary;
     font-family: 'Space Grotesk', sans-serif, serif;
+    width: 100%;
+    height: 100dvh;
+    position: relative;
 }
 
-header {
-    .header-container {
-        color: $white;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 5dvh;
-
-        p {
-            font-size: 2rem;
-        }
-
-        p.active {
-            border-bottom: 3px solid $green;
-        }
-
-        i {
-            color: $secondary;
-            font-size: 1.5rem;
-        }
-
-        i:hover {
-            color: $green;
-        }
-    }
+button {
+    cursor: pointer;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 5dvh;
-    margin-left: 5dvh;
-    margin-right: 5dvh;
-    padding-bottom: 15dvh;
-    border-bottom: 0.4px solid $white;
-
-    .container-text {
-        flex: 1;
-
-        .title {
-            color: $white;
-            font-size: 3.5rem;
-            margin-bottom: 5dvh;
-        }
-
-        .container-paragraph {
-            color: $grey;
-            font-size: 1.3rem;
-            margin-bottom: 5dvh;
-        }
-
-        a {
-            background-color: $primary;
-            color: $white;
-            font-size: 1.5rem;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        a.active {
-            border-bottom: 3px solid $green;
-        }
-
-        a:hover {
-            color: $green;
-        }
-
-        i {
-            display: none;
-        }
-    }
-
-    .image-container {
-        flex: 1;
-        margin-right: 5dvh;
-        margin-top: 5dvh;
-        max-width: 100%;
-        height: auto;
-    }
+svg {
+    width: 100%;
 }
 
+img {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+}
